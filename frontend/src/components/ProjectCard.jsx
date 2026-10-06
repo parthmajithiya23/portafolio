@@ -5,6 +5,7 @@ import './ProjectCard.css'
 
 export default function ProjectCard({ project, index = 0 }) {
   const { slug, title, tagline, tech, github, live, image, gradient, category } = project
+  const cardGradient = Array.isArray(gradient) && gradient.length >= 2 ? gradient : ['#67e8f9', '#38bdf8']
 
   return (
     <motion.article
@@ -17,7 +18,7 @@ export default function ProjectCard({ project, index = 0 }) {
       <Link to={`/projects/${slug}`} className="pm-project-card__media" aria-label={`View details for ${title}`}>
         <div
           className="pm-project-card__art"
-          style={{ background: `linear-gradient(135deg, ${gradient[0]}, ${gradient[1]})` }}
+          style={{ background: `linear-gradient(135deg, ${cardGradient[0]}, ${cardGradient[1]})` }}
         >
           {image && <img className="pm-project-card__image" src={image} alt={`${title} project preview`} />}
           <span className="pm-project-card__initials">

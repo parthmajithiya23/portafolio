@@ -20,6 +20,7 @@ export const projects = [
     github: 'https://github.com/ParthMajithiya/sanatan-gym',
     live: 'https://sanatan-gym.onrender.com',
     image: gym,
+    gradient: ['#67e8f9', '#38bdf8'],
     category: 'Frontend',
     features: [
       'Responsive landing page with animated hero section',
@@ -40,6 +41,7 @@ export const projects = [
     github: 'https://github.com/ParthMajithiya/e-commerce',
     live: 'https://neelkanth-electrical.onrender.com/',
     image: nlk,
+    gradient: ['#22d3ee', '#a78bfa'],
     category: 'MERN Stack',
     features: [
       'Product catalog with category filters and search',
@@ -60,6 +62,7 @@ export const projects = [
     github: 'https://github.com/ParthMajithiya/transport-management-system',
     live: 'https://tms-l7zu.onrender.com',
     image: tms,
+    gradient: ['#34d399', '#22c55e'],
     category: 'MERN Stack',
     features: [
       'Vehicle, driver and route management dashboard',
@@ -81,6 +84,7 @@ export const projects = [
     github: 'https://github.com/ParthMajithiya/car-rental-management-system',
     live: '',
     image: carRentalScreenshot,
+    gradient: ['#f59e0b', '#f97316'],
     category: 'Backend',
     features: [
       'Vehicle availability search by date range',
@@ -102,6 +106,7 @@ export const projects = [
     github: 'https://github.com/ParthMajithiya/e-commerce',
     live: 'https://neelkanth-electrical.onrender.com/',
     image: placement,
+    gradient: ['#8b5cf6', '#ec4899'],
     category: 'MERN Stack',
     features: [
       'Can upload resume and all details',

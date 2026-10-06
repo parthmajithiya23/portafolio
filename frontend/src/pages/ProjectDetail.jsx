@@ -10,6 +10,9 @@ import './ProjectDetail.css'
 export default function ProjectDetail() {
   const { slug } = useParams()
   const project = getProjectBySlug(slug)
+  const projectGradient = Array.isArray(project?.gradient) && project.gradient.length >= 2
+    ? project.gradient
+    : ['#67e8f9', '#38bdf8']
 
   if (!project) {
     return (
@@ -68,7 +71,7 @@ export default function ProjectDetail() {
           <Reveal delay={0.15}>
             <div
               className="project-detail__banner"
-              style={{ background: `linear-gradient(135deg, ${project.gradient[0]}, ${project.gradient[1]})` }}
+              style={{ background: `linear-gradient(135deg, ${projectGradient[0]}, ${projectGradient[1]})` }}
             >
               {project.image && <img className="project-detail__image" src={project.image} alt={`${project.title} project preview`} />}
               <span className="project-detail__banner-initials">
