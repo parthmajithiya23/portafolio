@@ -1,0 +1,128 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 64px 0 32px;
+  margin-top: 80px;
+  background: var(--bg-soft);
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer__mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+.footer__name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.footer__role {
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.footer__cols {
+  display: flex;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 130px;
+}
+
+.footer__col-title {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-faint);
+  margin-bottom: 4px;
+}
+
+.footer__col a {
+  font-size: 14px;
+  color: var(--text-dim);
+  transition: color 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  width: fit-content;
+}
+
+.footer__col a:hover {
+  color: var(--cyan-soft);
+}
+
+.footer__ext {
+  width: 12px;
+  height: 12px;
+  opacity: 0.7;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 28px;
+}
+
+.footer__bottom p {
+  font-size: 13px;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__socials a {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  transition: color 0.25s ease, border-color 0.25s ease, background-color 0.25s ease, transform 0.25s ease;
+}
+
+.footer__socials a svg {
+  width: 16px;
+  height: 16px;
+}
+
+.footer__socials a:hover {
+  color: var(--text);
+  border-color: var(--cyan);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .footer__top {
+    flex-direction: column;
+    gap: 28px;
+  }
+}

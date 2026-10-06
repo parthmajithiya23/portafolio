@@ -1,0 +1,12 @@
+.nav{position:sticky;top:0;z-index:100;border-bottom:1px solid var(--border);background:rgba(6,17,31,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);transition:background-color .35s ease,border-color .35s ease,box-shadow .35s ease}
+.nav--scrolled{background:rgba(6,17,31,.92);border-bottom-color:rgba(34,211,238,.2);box-shadow:0 12px 35px rgba(0,0,0,.16)}
+.nav__inner{display:flex;align-items:center;justify-content:space-between;height:74px;gap:24px}
+.nav__logo{display:flex;align-items:center;gap:10px;font-family:var(--font-display)}
+.nav__logo-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:11px;background:var(--gradient);color:#071018;font-weight:800;font-size:12px;box-shadow:0 8px 26px -12px rgba(103,232,249,.9)}
+.nav__logo-text{font-size:16px;font-weight:650;color:var(--text)}
+.nav__links{display:flex;align-items:center;gap:4px;padding:4px;border:1px solid var(--border);border-radius:14px;background:rgba(255,255,255,.025)}
+.nav__link{position:relative;padding:7px 13px;font-size:13px;font-weight:500;color:var(--text-dim);border-radius:10px;transition:color .25s ease,background-color .25s ease}
+.nav__link:hover{color:var(--text);background:rgba(103,232,249,.06)}
+.nav__link--active{color:var(--text);background:rgba(103,232,249,.09);box-shadow:inset 0 0 0 1px rgba(103,232,249,.12)}
+.nav__actions{display:flex;align-items:center;gap:9px}.nav__resume-btn{padding:9px 15px}.nav__burger{display:none;background:none;border:none;color:var(--text);padding:8px}.nav__burger svg{width:23px;height:23px}.nav__mobile{overflow:hidden;border-bottom:1px solid var(--border);background:rgba(7,10,18,.98)}.nav__mobile-inner{display:flex;flex-direction:column;padding:12px 18px 22px;gap:3px}.nav__mobile-link{padding:13px 6px;font-size:15px;color:var(--text-dim);border-bottom:1px solid var(--border)}.nav__mobile-link--cta{color:var(--cyan-soft);font-weight:600}
+@media(max-width:980px){.nav__links,.nav__actions{display:none}.nav__burger{display:block}.nav__inner{height:68px}}

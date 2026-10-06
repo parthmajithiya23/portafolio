@@ -1,0 +1,45 @@
+.skills-hero {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.skills-category {
+  padding-top: 0;
+  padding-bottom: 56px;
+}
+
+.skills-category__head {
+  margin-bottom: 28px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.skills-category__title {
+  font-size: 22px;
+  color: var(--text);
+}
+
+.skills-category__desc {
+  font-size: 14px;
+  color: var(--text-faint);
+}
+
+.skills-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
