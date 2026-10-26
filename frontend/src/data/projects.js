@@ -21,7 +21,7 @@ export const projects = [
     live: 'https://sanatan-gym.onrender.com',
     image: gym,
     gradient: ['#67e8f9', '#38bdf8'],
-    category: 'Frontend',
+    category: 'MERN stack',
     features: [
       'Responsive landing page with animated hero section',
       'Membership plan comparison with pricing cards',

@@ -30,7 +30,11 @@ export default function Navbar() {
   }, [location.pathname])
 
   useEffect(() => {
+    const previousOverflow = document.body.style.overflow
     document.body.style.overflow = open ? 'hidden' : ''
+    return () => {
+      document.body.style.overflow = previousOverflow
+    }
   }, [open])
 
   return (
@@ -68,6 +72,7 @@ export default function Navbar() {
 
         <button
           className="nav__burger"
+          type="button"
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
@@ -97,7 +102,7 @@ export default function Navbar() {
                 </NavLink>
               ))}
               <a href={RESUME_HREF} target="_blank" rel="noopener noreferrer" download="Parth_Majithiya_Resume.pdf" className="nav__mobile-link">
-                Resume``
+                Resume
               </a>
               <NavLink to="/contact" end className={({ isActive }) => `nav__mobile-link ${isActive ? 'nav__link--active' : ''}`}>
                 Contact
